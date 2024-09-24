@@ -1,18 +1,18 @@
 
-document.getElementById('btn-history').addEventListener('click', function(){
+document.getElementById('btn-history').addEventListener('click', function () {
     document.getElementById('history-section').classList.remove('hidden');
     document.getElementById('donation-section').classList.add('hidden');
 
 })
 
-document.getElementById('btn-donation').addEventListener('click', function(){
+document.getElementById('btn-donation').addEventListener('click', function () {
     document.getElementById('donation-section').classList.remove('hidden');
     document.getElementById('history-section').classList.add('hidden');
 
 })
 
 document.getElementById('btn-donate-noakhali')
-    .addEventListener('click', function(event){
+    .addEventListener('click', function (event) {
         event.preventDefault();
 
         const amountToAddNoakhali = getInputValue('amount-noakhali');
@@ -20,40 +20,38 @@ document.getElementById('btn-donate-noakhali')
         const navbarAmount = getInputText('nav-amount');
 
         const totalAmount = totalAmountForNoakhali + amountToAddNoakhali;
-        console.log(totalAmount);
 
         document.getElementById('donate-amount-noakhali').innerText = totalAmount;
 
         const totalNavAmount = navbarAmount - amountToAddNoakhali;
         document.getElementById('nav-amount').innerText = totalNavAmount;
 
-        const currentTime = new Date();
-        console.log(currentTime);
+        
+            const currentTime = new Date();
 
-        const p = document.createElement('p');
-        p.innerText = `${amountToAddNoakhali} Taka is Donated for Donate for Flood at Noakhali, Bangladesh.`;
+            const p = document.createElement('p');
+            p.innerText = `${amountToAddNoakhali} Taka is Donated for Donate for Flood at Noakhali, Bangladesh.`;
 
-        const time = document.createElement('p');
-        time.innerText = `Date: ${currentTime}`;
+            const time = document.createElement('p');
+            time.innerText = `Date: ${currentTime}`;
 
-        const p1 = document.getElementById('history').appendChild(p);
-        p1.classList.add('font-bold');
-        p1.classList.add('pb-4');
-        p1.classList.add('pl-4');
+            const p1 = document.getElementById('history').appendChild(p);
+            p1.classList.add('font-bold');
+            p1.classList.add('pb-4');
+            p1.classList.add('pl-4');
 
-        const p2 = document.getElementById('history').appendChild(time);
-        p2.classList.add('text-gray-400');
-        p2.classList.add('pl-4');
-        p2.classList.add('pb-4');
-      
+            const p2 = document.getElementById('history').appendChild(time);
+            p2.classList.add('text-gray-400');
+            p2.classList.add('pl-4');
+            p2.classList.add('pb-4');
+        
 
-        document.getElementById("my_modal_1").showModal();
-});
+    });
 
 
 
 document.getElementById('btn-donate-feni')
-    .addEventListener('click', function(event){
+    .addEventListener('click', function (event) {
 
         event.preventDefault();
 
@@ -77,7 +75,7 @@ document.getElementById('btn-donate-feni')
 
         const time = document.createElement('p');
         time.innerText = `Date: ${currentTime}`
-    
+
 
         const p1 = document.getElementById('history').appendChild(p);
         p1.classList.add('font-bold');
@@ -88,13 +86,11 @@ document.getElementById('btn-donate-feni')
         p2.classList.add('text-gray-400');
         p2.classList.add('pl-4');
         p2.classList.add('pb-4');
-      
 
-        document.getElementById("my_modal_1").showModal();
-});
+    });
 
 document.getElementById('btn-donate-quota')
-    .addEventListener('click', function(event){
+    .addEventListener('click', function (event) {
 
         event.preventDefault();
 
@@ -118,7 +114,7 @@ document.getElementById('btn-donate-quota')
 
         const time = document.createElement('p');
         time.innerText = `Date: ${currentTime}`
-    
+
 
         const p1 = document.getElementById('history').appendChild(p);
         p1.classList.add('font-bold');
@@ -129,16 +125,14 @@ document.getElementById('btn-donate-quota')
         p2.classList.add('text-gray-400');
         p2.classList.add('pl-4');
         p2.classList.add('pb-4');
-      
 
-        document.getElementById("my_modal_1").showModal();
-});
+    });
 
-document.getElementById('btn-blog').addEventListener('click', function(){
+document.getElementById('btn-blog').addEventListener('click', function () {
     window.location.href = '/blog.html';
 })
 
-document.getElementById('btn-home').addEventListener('click', function(){
+document.getElementById('btn-home').addEventListener('click', function () {
     console.log('sdf');
     window.location.href = '/index.html';
 })

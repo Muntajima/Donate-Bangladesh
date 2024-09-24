@@ -18,37 +18,39 @@
   </style>
 </head>
 <body class="max-w-screen-xl mx-auto lexend-normal">
-    <nav>
-        <div class="navbar bg-base-100 bg-secondary px-12 pt-4 pb-12">
-            <div class="navbar-start">
-                
-                <a href="index.html" class="btn bg-primary px-8 font-semibold text-xl rounded-md">Home</a>
-            </div>
-            <div class="navbar-center ">
-                <img src="./assets/logo.png" alt="">
-              <a class="btn btn-ghost text-xl font-semibold">Donate Bangladesh</a>
-            </div>
-            <div class="navbar-end">
-             <div class="flex gap-2">
-                <img src="./assets/coin.png" alt="">
-                <div class="flex gap-2 font-semibold text-xl">
-                    <p class="">98600</p>
-                    <p>BDT</p>
-                </div>
-             </div>
+    <div class="sticky top-0 z-50">
+        <div class="navbar px-2 lg:px-12 pt-4 pb-8 bg-yellow-100 ">
+          <div class="navbar-start">
+            <a href="/index.html" class="btn bg-primary px-8 font-semibold text-xl rounded-md">Home</a>
+            
+          </div>
+          <div class="navbar-center ">
+            <img src="./assets/logo.png" alt="">
+            <a class="btn btn-ghost text-xl font-semibold hidden lg:block">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end">
+            <div class="flex gap-2">
+              <img src="./assets/coin.png" alt="">
+              <div class="flex gap-2 font-semibold text-xl">
+                <p id="nav-amount" class="">5500</p>
+                <p>BDT</p>
+              </div>
             </div>
           </div>
-    </nav>
-    <main>
-        <div class="flex justify-center mt-24 mb-12 gap-8">
-            <!--2 buttons-->
-            <button class="btn px-8 font-semibold text-xl text-textColor bg-white rounded-md border-solid border-2 border-gray-300">Donation</button>
-            <button class="btn bg-primary px-8 font-semibold text-xl rounded-md">History</button>
         </div>
+        <!--2 buttons-->
+        <div class="flex justify-center gap-4 h-44 pt-20 pb-8 sticky backdrop-filter backdrop-blur-lg">
+          <button id="btn-donation" class="btn bg-primary px-8 font-semibold text-xl rounded-md">Donation</button>
+          <button id="btn-history"
+            class="btn px-8 font-semibold text-xl text-textColor bg-white rounded-md border-solid border-2 border-gray-300">History</button>
+        </div>
+      </div>
+    <main>
+        
 
         <section class="lexend-normal mb-12">
-            <h1 class="font-bold text-4xl pb-12 pl-12">Important FAQ</h1>
-            <div class="ml-12">
+            <h1 class="font-bold text-4xl pb-12 mx-4 lg:pl-12">Important FAQ</h1>
+            <div class="mx-4 lg:ml-12">
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>

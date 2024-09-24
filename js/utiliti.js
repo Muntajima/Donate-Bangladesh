@@ -4,10 +4,11 @@ function getInputValue(id){
     
     if(isNaN(inputValue)){
         alert('Failed to donate money');
-        return null;
+        return 0;
     }
     else{
-        const inputValueNumber = parseFloat(inputValue);
+        const inputValueNumber = Number(inputValue);
+        document.getElementById("my_modal_1").showModal();
         return inputValueNumber;
     }
     
